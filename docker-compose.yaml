@@ -35,7 +35,6 @@ services:
       - ./apps/payments/.env
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
   notifications:
     build:
       context: .
@@ -48,6 +47,5 @@ services:
       - '3003:3003'
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
   mongo:
     image: mongo
